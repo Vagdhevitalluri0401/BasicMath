@@ -1,0 +1,7 @@
+class Solution { 
+  public: 
+    int greatestOfThree(int A, int B, int C) { 
+       return (A>C) ? ((A>B) ? A : B) : ((C>B) ? C : B); 
+
+    } 
+};

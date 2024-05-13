@@ -1,0 +1,21 @@
+class Solution { 
+  public: 
+    string armstrongNumber(int n){ 
+        int c=n; 
+        int r=0,rev=0; 
+        while(n>0) 
+        { 
+            r=n%10; 
+            rev=rev+pow(r,3); 
+            n=n/10; 
+        } 
+        if(rev==c) 
+        { 
+            return "Yes"; 
+        } 
+        else 
+        { 
+            return "No"; 
+        } 
+    } 
+};

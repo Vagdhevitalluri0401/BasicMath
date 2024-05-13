@@ -1,0 +1,19 @@
+class Solution{ 
+public: 
+    long long facto(int n) 
+        { 
+            long long fact=1; 
+            for(int i=1;i<=n;i++) 
+                fact=fact*i; 
+            return fact; 
+        } 
+    long long nPr(int n, int r){ 
+        if(n<r) 
+        { 
+            return 0;    
+        } 
+    long long nume=facto(n); 
+    long long deno=facto(n-r); 
+    return nume/deno; 
+    } 
+};
